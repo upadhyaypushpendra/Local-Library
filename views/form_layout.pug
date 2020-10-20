@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+    head
+        title= title
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src='/javascripts/script.js')
+    body
+        header
+            a(data-toggle='tooltip' title='Home' data-placement="auto") Local Library
+        section
+            div(class='sidebar')
+                block sidebar
+                    a(href='/catalog')
+                        div.menu Home
+                    hr
+                    div.menu-heading &#187; View All
+                    a(href='/catalog/books')
+                        div.menu &#8658; Books
+                    a(href='/catalog/authors')
+                        div.menu &#8658; Authors
+                    a(href='/catalog/genres')
+                        div.menu &#8658; Genres
+                    a(href='/catalog/bookinstances')
+                        div.menu &#8658; Book Instances
+                    hr
+                    div.menu-heading &#187; Create New
+                    a(href='/catalog/author/create')
+                        div.menu &plus; Author
+                    a(href='/catalog/genre/create')
+                        div.menu &plus; Genre
+                    a(href='/catalog/book/create')
+                        div.menu &plus; Book
+                    a(href='/catalog/bookinstance/create')
+                        div.menu &plus; Book Instance (copy)
+            div.main-content
+                div.form-heading.center
+                    block heading
+                div.form-container
+                    block content

@@ -1,0 +1,44 @@
+extends form_layout
+
+block heading
+    span #{title}
+block content
+    form(method='POST', action='')
+        div.form-group
+            label(for='book') Book:
+            select#book.form-control(type='select' placeholder='Select book' name='book' required='true')
+                - book_list.sort(function(a, b) {let textA = a.title.toUpperCase(); let textB = b.title.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
+                for book in book_list
+                    if bookInstance
+                        option(value=book._id selected=(selected_book === book._id.toString())) #{book.title}
+                    else
+                        option(value=book._id) #{book.title}
+        div.form-group
+            label(for='imprint') Imprint:
+            input#imprint.form-control(type='text', placeholder='Publisher and date information', name='imprint' required='true', value=(undefined === bookInstance ? '' : bookInstance.imprint) )
+        div.form-group
+            label(for='due_back') Due when book available:
+            input#due_back.form-control(type='date', name='due_back', value=(undefined === bookInstance ? '' : bookInstance.due_back))
+        div.form-group
+            label(for='status') Status:
+            select#status.form-control(type='select', placeholder='Select status', name='status', required='true')
+                if bookInstance
+                    option(value='Maintenance', selected=(bookInstance.status === 'Maintenance')) Maintenance
+                    option(value='Available', selected=(bookInstance.status === 'Available')) Available
+                    option(value='Loaned', selected=(bookInstance.status === 'Loaned')) Loaned
+                    option(value='Reserved', selected=(bookInstance.status === 'Reserved')) Reserved
+                else
+                    option(value='Maintenance') Maintenance
+                    option(value='Available') Available
+                    option(value='Loaned') Loaned
+                    option(value='Reserved') Reserved
+        if bookInstance
+            button.btn.btn-warning(type='submit') Update
+        else
+            button.btn.btn-success(type='submit') Create
+        if errors
+            br
+            br
+            ul
+                for error in errors
+                    li.text-danger!= error.msg

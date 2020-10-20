@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+header{
+  background: black;
+  margin:0;
+  font-size:60px;
+  font-weight:bold;
+  padding: 15px;
+  color:white;
+  height:15vh;
+}
+header > a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #337ab7;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+}
+.sidebar{
+  width: 25%;
+  height: 100%;
+  background: #07841d;
+  border-right-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+}
+.sidebar > a {
+  padding:0;
+  margin: 0;
+}
+.sidebar > a:hover{
+  color:white;
+  text-decoration: none;
+}
+.menu-heading{
+  font-weight: bolder;
+  font-size: 20px;
+  background: black;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  color: #337ab7;
+}
+.menu{
+  color: white;
+  font-size:18px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+.menu:hover{
+  background: #151111;
+}
+.main-content{
+  width:75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y:auto;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-heading{
+  font-size: 40px;
+  font-weight: bold;
+  min-height: 15%;
+  background: #07841d;
+  box-shadow: 0 0 15px 2px grey;
+}
+.form-container{
+  height: auto;
+  padding: 5% 20%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px 2px grey;
+}
+li{
+  font-size:18px;
+}

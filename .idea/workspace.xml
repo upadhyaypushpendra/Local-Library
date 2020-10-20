@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31ef9465-5453-4e1b-a30a-d512736ea3b1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Pug File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1gl6xDsRxigOLbs1RTfNkhlmQ2b" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.8.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.6.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/pug/lib/index.js" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31ef9465-5453-4e1b-a30a-d512736ea3b1" name="Default Changelist" comment="" />
+      <created>1598677097226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598677097226</updated>
+      <workItem from="1598677103065" duration="52000" />
+      <workItem from="1598677596140" duration="4288000" />
+      <workItem from="1598860495832" duration="2835000" />
+      <workItem from="1598868210421" duration="2377000" />
+      <workItem from="1598870902510" duration="692000" />
+      <workItem from="1598875089653" duration="2467000" />
+      <workItem from="1598878615154" duration="1603000" />
+      <workItem from="1598880269112" duration="114000" />
+      <workItem from="1598894274228" duration="1166000" />
+      <workItem from="1598899927191" duration="4138000" />
+      <workItem from="1598935348526" duration="3208000" />
+      <workItem from="1598943227248" duration="259000" />
+      <workItem from="1598943516678" duration="3996000" />
+      <workItem from="1598948736465" duration="620000" />
+      <workItem from="1598954837340" duration="2140000" />
+      <workItem from="1598973622252" duration="3032000" />
+      <workItem from="1598983884917" duration="8616000" />
+      <workItem from="1599023683146" duration="7737000" />
+      <workItem from="1599042420512" duration="6193000" />
+      <workItem from="1599059628146" duration="19823000" />
+      <workItem from="1599156471026" duration="3805000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="449" y="27" width="458" height="741" key="#Code_Folding" timestamp="1599047933409">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="449" y="27" width="458" height="741" key="#Code_Folding/0.27.1366.741@0.27.1366.741" timestamp="1599047933409" />
+    <state x="571" y="234" width="374" height="333" key="#File_Watchers" timestamp="1598944021361">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="571" y="234" width="374" height="333" key="#File_Watchers/0.27.1366.741@0.27.1366.741" timestamp="1598944021361" />
+    <state x="401" y="212" width="554" height="378" key="#Notifications" timestamp="1598943469062">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="401" y="212" width="554" height="378" key="#Notifications/0.27.1366.741@0.27.1366.741" timestamp="1598943469062" />
+    <state x="141" y="55" width="1084" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598678407837">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="141" y="55" width="1084" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1598678407837" />
+    <state x="327" y="57" width="768" height="711" key="EditFileWatcherDialog" timestamp="1598944248186">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="327" y="57" width="768" height="711" key="EditFileWatcherDialog/0.27.1366.741@0.27.1366.741" timestamp="1598944248186" />
+    <state x="465" y="157" width="424" height="491" key="FileChooserDialogImpl" timestamp="1598943947255">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="465" y="157" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1598943947255" />
+    <state x="179" y="31" width="1007" height="737" key="SettingsEditor" timestamp="1598945079002">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="179" y="31" width="1007" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1598945079002" />
+    <state x="402" y="211" width="550" height="384" key="jetbrains.nodejs.interpreters-dialog" timestamp="1598945075943">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="402" y="211" width="550" height="384" key="jetbrains.nodejs.interpreters-dialog/0.27.1366.741@0.27.1366.741" timestamp="1598945075943" />
+    <state x="347" y="174" key="run.anything.popup" timestamp="1599062267746">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="347" y="174" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1599062267746" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598683626204">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1598683626204" />
+  </component>
+</project>

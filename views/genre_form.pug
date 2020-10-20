@@ -1,0 +1,29 @@
+extends form_layout
+
+block heading
+    span #{title}
+block content
+    if(genre && genre_books.length > 0)
+        br
+        p Following books will also update their genre :
+        ul
+        for book in genre_books
+            li
+                a(url=book.url) #{book.title}
+            br
+        p Are you sure to update genre ?
+        br
+    form(method='POST', action='')
+        div.form-group
+            label(for='name') Genre:
+            input#name.form-control(type='text', minlength='3', maxlength='100', placeholder='Fantasy, Poetry, etc.', name='name', value=(undefined === genre ? '' : genre.name), required=true)
+        if genre
+            button.btn.btn-warning(type='submit') Update
+        else
+            button.btn.btn-success(type='submit') Create
+    if errors
+        br
+        br
+        ul
+            for error in errors
+                li.text-danger!=error.msg

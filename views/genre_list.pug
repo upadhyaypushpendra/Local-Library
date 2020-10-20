@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+
+    ul
+        - genre_list.sort(function(a, b) {let textA = a.name.toUpperCase(); let textB = b.name.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
+        each genre in genre_list
+            li
+                a(href=genre.url) #{genre.name}
+            br
+        else
+            li There is no genres available in this library.

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 Dynamic Content
+  br
+  if error
+    p Error getting the dynamic content.
+  else
+    h3 The Library has the following record counts :
+    br
+    span(style='font-size:20px;') &#8680; #[strong Books:] !{data.book_count}
+    br
+    span(style='font-size:20px;') &#8680; #[strong Copies:] !{data.book_instance_count}
+    br
+    span(style='font-size:20px;') &#8680; #[strong Copies Available:] !{data.book_instance_available_count}
+    br
+    span(style='font-size:20px;') &#8680; #[strong Authors:] !{data.author_count}
+    br
+    span(style='font-size:20px;') &#8680; #[strong Genres:] !{data.genre_count}
