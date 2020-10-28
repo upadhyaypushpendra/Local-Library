@@ -17,9 +17,13 @@
     "moment": "^2.27.0",
     "mongoose": "^5.10.2",
     "morgan": "~1.9.1",
-    "pug": "^3.0.0"
+    "pug": "^3.0.0",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "14.8.0"
   }
 }
