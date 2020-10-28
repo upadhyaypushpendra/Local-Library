@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     document.body.appendChild(puGitLink);
 
     let puLinkedInLink = document.createElement("a");
-    puLinkedInLink.setAttribute("href","https://LinkedInhub.com/upadhyaypushpendra");
+    puLinkedInLink.setAttribute("href","https://www.linkedin.com/in/pushpendra-upadhyay-3440ab174/");
     puLinkedInLink.setAttribute("target","_blank");
 
 
