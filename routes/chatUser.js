@@ -19,16 +19,16 @@ router.post("/signin", chatUser_controller.chatUser_signin);
 router.get("/access", authentication.authenticateRefreshToken, chatUser_controller.chatUser_get_access_token);
 
 //POST request to delete chatUser
-router.delete("/:id", authenticate.authenticateAccessToken, chatUser_controller.chatUser_delete);
+router.delete("/:id", authentication.authenticateAccessToken, chatUser_controller.chatUser_delete);
 
 //GET request to update chatUser
-router.put("/:id", authenticate.authenticateAccessToken, chatUser_controller.chatUser_update);
+router.put("/:id", authentication.authenticateAccessToken, chatUser_controller.chatUser_update);
 
 //GET request to get 1 chatUser
-router.get("/:id", authenticate.authenticateAccessToken, chatUser_controller.chatUser_get);
+router.get("/:id", authentication.authenticateAccessToken, chatUser_controller.chatUser_get);
 
 //GET request to get all chatUsers
-router.get("/", authenticate.authenticateAccessToken, chatUser_controller.chatUser_list);
+router.get("/", authentication.authenticateAccessToken, chatUser_controller.chatUser_list);
 
 // Export router
 module.exports = router;
