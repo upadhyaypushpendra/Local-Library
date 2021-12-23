@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     default_page_size: 30,
     locked_themes: 13,
     default_page_no: 1,
