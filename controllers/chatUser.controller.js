@@ -232,7 +232,9 @@ exports.chatUser_signin = [
 
             delete chatUser.password;
 
-            res.status(200).json(chatUser);
+            const tokens = createTokens(chatUser.id);
+            
+            res.status(200).json({ ...chatUser, ...tokens });
         }
     },
 ];
