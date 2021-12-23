@@ -3,6 +3,8 @@ const { body, validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 const async = require("async");
 const { encrypt, decrypt } = require("./../utils/cryptoUtil");
+const { verifyAccessToken, verifyRefreshToken, createTokens } = require("./../utils/jwt");
+
 
 // Display list of all chatUsers
 exports.chatUser_list = (req, res, next) => {
@@ -234,3 +236,22 @@ exports.chatUser_signin = [
         }
     },
 ];
+
+// Handler chatUser update password
+exports.chatUser_get_access_token = async (req, res, next) => {
+    res.setHeader('content-type', 'application/json');
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        res.status(200).json({ value: chatUser, error: errors.array() });
+    } else {
+        //Data from form is valid
+        const userId = req.headers["usersId"];
+        
+        if(!userId) {
+            res.status(403).json({message: "Invalid request"});
+        } else {
+            const tokens = createTokens(userId);
+            res.status(200).json(tokens);
+        }
+    }
+};
