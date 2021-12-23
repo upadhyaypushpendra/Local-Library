@@ -9,7 +9,7 @@ exports.chatUser_list = (req, res, next) => {
   ChatUser.find().populate('chatUser').sort([['family_name','ascending']]).exec((err,list_chatUsers)=>{
     if(err) return next(err);
     // Successful so render
-    response.status(200).send(list_chatUsers);
+    res.status(200).send(list_chatUsers);
   });
 };
 
