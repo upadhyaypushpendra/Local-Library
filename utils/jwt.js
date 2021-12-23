@@ -28,12 +28,12 @@ const verifyOptions = {
 
 function createAccessToken(userId) {
     return new Promise((resolve, reject) => {
-        jwt.sign({userId}, privateSecret, accessSignOptions, (err, encoded) => {
+        jwt.sign({ userId }, privateSecret, accessSignOptions, (err, encoded) => {
             if (err === null && encoded !== undefined) {
                 const expireAfter = config.access_token_expiry_after /* two weeks */
                 const expireAt = new Date()
                 expireAt.setSeconds(expireAt.getSeconds() + expireAfter)
-                resolve({accessToken: encoded, accessExpireAt: expireAt})
+                resolve({ accessToken: encoded, accessExpireAt: expireAt })
             } else {
                 reject(err)
             }
@@ -43,12 +43,12 @@ function createAccessToken(userId) {
 
 function createTemporaryTokenWithVisitorId(visitorId) {
     return new Promise((resolve, reject) => {
-        jwt.sign({visitorId}, privateSecret, accessSignOptions, (err, encoded) => {
+        jwt.sign({ visitorId }, privateSecret, accessSignOptions, (err, encoded) => {
             if (err === null && encoded !== undefined) {
                 const expireAfter = 600 /*10min*/;
                 const expireAt = new Date();
                 expireAt.setSeconds(expireAt.getSeconds() + expireAfter);
-                resolve({tempToken: encoded, tempExpireAt: expireAt})
+                resolve({ tempToken: encoded, tempExpireAt: expireAt })
             } else {
                 reject(err)
             }
@@ -58,12 +58,12 @@ function createTemporaryTokenWithVisitorId(visitorId) {
 
 function createRefreshToken(userId) {
     return new Promise((resolve, reject) => {
-        jwt.sign({userId}, privateSecret, refreshSignOptions, (err, encoded) => {
+        jwt.sign({ userId }, privateSecret, refreshSignOptions, (err, encoded) => {
             if (err === null && encoded !== undefined) {
                 const expireAfter = config.refresh_token_expiry_after /* two weeks */
                 const expireAt = new Date()
                 expireAt.setSeconds(expireAt.getSeconds() + expireAfter)
-                resolve({refreshToken: encoded, refreshExpireAt: expireAt})
+                resolve({ refreshToken: encoded, refreshExpireAt: expireAt })
             } else {
                 reject(err)
             }
@@ -88,12 +88,12 @@ async function createTokens(userId) {
 
 async function createTemporaryTokens(userId) {
     return new Promise((resolve, reject) => {
-        jwt.sign({userId}, privateSecret, accessSignOptions, (err, encoded) => {
+        jwt.sign({ userId }, privateSecret, accessSignOptions, (err, encoded) => {
             if (err === null && encoded !== undefined) {
                 const expireAfter = 600 /* 10 min */
                 const expireAt = new Date()
                 expireAt.setSeconds(expireAt.getSeconds() + expireAfter)
-                resolve({accessToken: encoded, accessExpireAt: expireAt})
+                resolve({ accessToken: encoded, accessExpireAt: expireAt })
             } else {
                 reject(err)
             }
@@ -140,7 +140,7 @@ async function verifyTemporaryTokenWithVisitorId(tempToken) {
     })
 }
 
-async function verifyRefreshToken(refreshToken {
+async function verifyRefreshToken(refreshToken) {
     return new Promise((resolve, reject) => {
         jwt.verify(refreshToken, publicKey, verifyOptions, async (err, decoded) => {
             if (err === null && decoded !== undefined) {
