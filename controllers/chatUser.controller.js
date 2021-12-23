@@ -176,13 +176,13 @@ exports.chatUser_update_password = [
     const newPasswordHash = encrypt(newPassword);
     
 		//Update an ChatUser pasword
-    let chatUser = new ChatUser({
-      password,
+    const chatUserToUpdate = new ChatUser({
+      password: newPasswordHash,
       updated_at: Date.now(),
       _id : chatUserId
     });
     
-    ChatUser.findByIdAndUpdate(chatUserId, chatUser, {} ,function (err,updatedChatUser) {
+    ChatUser.findByIdAndUpdate(chatUserId, chatUserToUpdate, {} ,function (err,updatedChatUser) {
       if(err) { return res.status(500).json(err); }
       // Successful updated
       res.status(200).json({message: "Password updated successfully.");
