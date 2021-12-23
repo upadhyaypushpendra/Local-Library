@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const opts = { toJSON: { virtuals: true } , toObject : {virtuals:true} };
 
 const ChatUserSchema = new Schema({
-  phone: { type: String, required: true, maxlength: 20 },
+  phone: { type: String, required: true, maxlength: 20, unique: true },
   password: { type: Object, required: true },
   name: { type: String, required: false, maxlength: 200 },
   about: { type: String, required: false, maxlength: 500 },
