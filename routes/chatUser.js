@@ -20,3 +20,6 @@ router.get("/:id", chatUser_controller.chatUser_get);
 
 //GET request to get all chatUsers
 router.get("/", chatUser_controller.chatUser_list);
+
+// Export router
+module.exports = router;
