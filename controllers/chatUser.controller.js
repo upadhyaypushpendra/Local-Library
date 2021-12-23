@@ -4,7 +4,7 @@ const { sanitizeBody } = require('express-validator/filter');
 const async = require("async");
 
 //Display list of all chatUsers
-exports.chatUser_list = (request, response,next) => {
+exports.chatUser_list = (req, res, next) => {
   res.setHeader('content-type', 'application/json');
   ChatUser.find().populate('chatUser').sort([['family_name','ascending']]).exec((err,list_chatUsers)=>{
     if(err) return next(err);
