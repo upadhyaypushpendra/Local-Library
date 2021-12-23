@@ -1,7 +1,7 @@
-import * as fs from "fs";
-import config from '../config';
-import jwt from 'jsonwebtoken';
-import path from "path";
+const fs = require("fs");
+const config = require("./../config/index");
+const jwt = require("jsonwebtoken");
+const path = require("path")
 
 const privateKey = fs.readFileSync(path.join(__dirname + config.private_key_file))
 
