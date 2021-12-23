@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 //Require controller modules
-const chatUser_controller = require("./../controllers.controller");
+const chatUser_controller = require("./../controllers/chatUser.controller");
 
 /* ***chatUser ROUTES*** */
 
