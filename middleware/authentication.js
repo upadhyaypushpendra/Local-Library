@@ -1,7 +1,7 @@
 const { verifyAccessToken, verifyRefreshToken } = require("./../utils/jwt");
 
 exports.authenticateAccessToken = (request, response, next) => {
-    const token = request.headers["kutuki-access-token"];
+    const token = request.headers["khwaish-access-token"];
 
     if (!token) {
         response.status(401).json(new Error("Token not provided"));
@@ -17,7 +17,7 @@ exports.authenticateAccessToken = (request, response, next) => {
 }
 
 exports.authenticateRefreshToken = (request, response, next) => {
-    const token = request.headers["kutuki-refresh-token"];
+    const token = request.headers["khwaish-refresh-token"];
 
     if (!token) {
         response.status(401).json(new Error("Token not provided"));
